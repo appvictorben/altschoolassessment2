@@ -1,0 +1,98 @@
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+    font-family: 'Roboto', sans-serif;
+  background: #f5f6fa;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+/* Intro Section */
+.intro {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.intro-text h1 {
+  color: #4a90e2;     
+  font-size: 2rem;    
+  margin-bottom: 10px; 
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;          /* Ensures image stays inside circle */
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4a90e2; /* Single, even border */
+}
+
+/* Info Section */
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+
+.card p {
+  text-align: justify;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: 0 auto 15px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
