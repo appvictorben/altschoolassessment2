@@ -85,7 +85,7 @@ body {
 @media (max-width: 768px) {
   .intro {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: justify;
   }
 
   .profile-pic {
